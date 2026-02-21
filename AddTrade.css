@@ -1,0 +1,31 @@
+.add-trade { max-width: 960px; }
+
+.trade-form { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.form-input.error { border-color: var(--red); }
+.form-error { color: var(--red); font-size: 0.6rem; font-family: var(--font-mono); margin-top: 0.25rem; display: block; }
+
+.dir-toggle { display: flex; gap: 0.5rem; }
+.dir-btn {
+  flex: 1;
+  padding: 0.6rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  color: var(--text-1);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  border-radius: 2px;
+  transition: all 0.15s;
+  font-weight: 600;
+}
+.dir-btn:hover { border-color: var(--border-bright); }
+.dir-btn.active-long { background: var(--green-dim); border-color: var(--green); color: var(--green); }
+.dir-btn.active-short { background: var(--red-dim); border-color: var(--red); color: var(--red); }
+
+.form-actions { display: flex; gap: 0.75rem; margin-top: 0.5rem; }

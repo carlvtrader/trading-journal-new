@@ -1,0 +1,110 @@
+.trade-log { display: flex; flex-direction: column; gap: 0; }
+.mb-1 { margin-bottom: 1rem; }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.filter-input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.log-summary {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sum-item {
+  font-size: 0.75rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.table-wrap { overflow-x: auto; padding: 0; }
+
+.trade-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.trade-table th {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  color: var(--text-2);
+  text-align: left;
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  background: var(--bg-1);
+  position: sticky;
+  top: 0;
+}
+
+.trade-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.trade-table th.sortable:hover { color: var(--text-1); }
+.trade-table th.active { color: var(--amber); }
+
+.trade-table td {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.trade-table tr:last-child td { border-bottom: none; }
+.trade-table tr:hover td { background: var(--bg-2); }
+
+.dir-cell { font-weight: 600; letter-spacing: 0.05em; }
+
+.notes-cell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-2) !important;
+  font-size: 0.65rem !important;
+}
+
+.del-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-2);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.15s;
+}
+
+.del-btn:hover { color: var(--red); }
+
+.confirm-del {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.tiny-btn {
+  padding: 0.2rem 0.4rem !important;
+  font-size: 0.6rem !important;
+}
+
+.empty-state {
+  padding: 2rem;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-align: center;
+}
